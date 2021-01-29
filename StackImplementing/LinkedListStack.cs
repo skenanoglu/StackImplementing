@@ -4,18 +4,18 @@ using System.Text;
 
 namespace StackImplementing
 {
-    class LinkedListStack
+    class LinkedListStack<T>
     {
-        Node first;
+        Node<T> first;
         public LinkedListStack()
         {
             first = null;
         }
 
 
-        public void Push(int value)
+        public void Push(T value)
         {
-            Node newNode = new Node(value);
+            Node<T> newNode = new Node<T>(value);
 
             if (first == null)  {newNode.next = null;  }
             else { newNode.next = first; }
@@ -38,7 +38,7 @@ namespace StackImplementing
         }
         public void Show()
         {
-            Node gezici = first;
+            Node<T> gezici = first;
             while (gezici!= null)
             { 
                 Console.WriteLine(gezici.data);  

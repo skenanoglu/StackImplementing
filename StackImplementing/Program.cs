@@ -6,7 +6,7 @@ namespace StackImplementing
     {
         static void Main(string[] args)
         {
-            LinkedListStack linked = new LinkedListStack();
+            LinkedListStack<int> linked = new LinkedListStack<int>();
             linked.Push(15);
             linked.Push(36);
             linked.Push(45);

@@ -4,12 +4,12 @@ using System.Text;
 
 namespace StackImplementing
 {
-    class Node
+    class Node<T>
     {
-       internal int data;
-       internal  Node next;
+       internal T data;
+       internal  Node<T> next;
 
-        public Node(int data)
+        public Node(T data)
         {
             this.data = data;
         }
